@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/rootLayout">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:background="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/Toolbar1"
+            style="@style/Toolbar"
+            app:contentInsetStart="0dp">
+            <ImageView
+                android:id="@+id/icMenu"
+                android:src="@drawable/ic_menu1"
+                android:rotation="90"
+                style="@style/MenuDrawer"
+                android:tint="@android:color/white" />
+            <com.calak.jemmy.menuapps.widget.CalakText
+                android:text="Title Menu"
+                android:textSize="20sp"
+                android:paddingLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+</FrameLayout>
